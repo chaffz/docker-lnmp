@@ -1,0 +1,11 @@
+asm/
+complete/
+backup/
+shadowsocks/
+tester/
+vhosts/
+vpn/
+*.pem
+www/
+nginx/log/
+*.DS_Store
