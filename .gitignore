@@ -9,3 +9,4 @@ vpn/
 www/
 nginx/log/
 *.DS_Store
+*.log

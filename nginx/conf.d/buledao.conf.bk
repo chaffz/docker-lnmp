@@ -1,0 +1,10 @@
+
+server {
+    listen       80 ;
+    server_name  buledao.com;
+    root /dockerdata/www/buledao;
+    index index.html;
+
+    access_log   /var/log/nginx/buledao.com-access.log;
+    error_log    /var/log/nginx/buledao.com-error.log;
+}

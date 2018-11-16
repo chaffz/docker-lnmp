@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+    flume:
+        image: probablyfine/flume
+        volumes:
+            - ./data/conf:/opt/flume-config
+            - ./data/logs:/data/logs
+        environment:
+            FLUME_AGENT_NAME: agent
+        networks:
+            - default
+            - kafka_default
+networks:
+    kafka_default:
+        external: true
