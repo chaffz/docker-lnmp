@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+    flume_events:
+        image: probablyfine/flume
+        container_name: flume_events
+        volumes:
+            - ./data/conf/flume_events.conf:/opt/flume-config/flume.conf
+            - ./data/conf:/opt/flume-config
+            - /data2/double11/events:/data
+            - /data/logs/flume/double11/events:/data/c/
+        environment:
+            FLUME_AGENT_NAME: agent
+        extra_hosts:
+            - "test-ai-etl-c1-1:10.3.8.49"
+            - "test-ai-etl-c1-2:10.3.8.21"
+            - "test-ai-etl-c1-3:10.3.8.48"
+            - "test-ai-etl-c1-4:10.3.8.19"
+            - "test-ai-etl-c1-5:10.3.8.32"
