@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  hexo:
+    build: .
+    environment:
+      HEXO_GIT_USER: 'wuyx'
+      HEXO_GIT_EMAIL: 'wuyx@weipaitang.com'
+      HEXO_TYPE: d
+

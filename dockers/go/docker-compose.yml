@@ -2,12 +2,12 @@ version: "3"
 
 services:
   ubuntu:
-    build: . 
+    build: .
     privileged: true
     ports:
       - "8081:80"
     volumes:
       - /Users/wuyuxin/Documents/dockerdata/:/dockerdata/
-      - /Users/wuyuxin/Documents/dockerdata/www/go/:/go/
+      - /Users/wuyuxin/Documents/dockerdata/www/go:/go/
     tty: true
     
