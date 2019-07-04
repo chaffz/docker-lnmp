@@ -4,12 +4,7 @@ services:
   redis:
     image: redis:5.0-rc
     privileged: true
-    expose:
-      - "6379"
-    networks:
-      - default
-      - app_net
+    hostname: "wyx"
+    ports:
+      - "6379:6379"
 
-networks:
-  app_net:
-    external: true

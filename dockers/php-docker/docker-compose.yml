@@ -25,7 +25,6 @@ services:
       - default
       - app_net
     external_links:
-      - redis
       - mysql
 
 networks:

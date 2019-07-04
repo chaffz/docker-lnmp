@@ -10,3 +10,9 @@ www/
 nginx/log/
 *.DS_Store
 *.log
+Parallels/
+go.mod
+go.sum
+hw5-handout/
+images/
+dockers/etcd/docker/
